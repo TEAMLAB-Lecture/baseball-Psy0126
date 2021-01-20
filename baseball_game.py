@@ -312,7 +312,7 @@ def main():
                 break
         
         while True:
-            user_input = input('You win, one more(Y/N) ?')
+            user_input = input('You win, one more(Y/N)?')
             if user_input =='0':
                 break
             elif is_yes(user_input):
