@@ -291,6 +291,7 @@ def is_no(one_more_input):
 def main():
     print("Play Baseball")
     user_input = '999'
+    YN_input = 'abc'
     while True:
         random_number = str(get_not_duplicated_three_digit_number())
         print("Random Number is : ", random_number)
@@ -312,20 +313,25 @@ def main():
                 break
         
         while True:
-            user_input = input('You win, one more(Y/N)?')
+            YN_input = input('You win, one more(Y/N)?')
             if user_input =='0':
                 break
-            elif is_yes(user_input):
+            elif YN_input == '0':
                 break
-            elif is_no(user_input):
+            elif is_yes(YN_input):
+                break
+            elif is_no(YN_input):
                 break
             else:
                 print("Wrong Input, Input again")
             
         if user_input == '0':
             break
+
+        if YN_input == '0':
+            break
         
-        if is_no(user_input):
+        if is_no(YN_input):
             break
 
     print("Thank you for using this program")
