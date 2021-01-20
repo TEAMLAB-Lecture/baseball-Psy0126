@@ -311,7 +311,9 @@ def main():
             
             if strikes == 3:
                 break
-        
+        if user_input == '0':
+            break
+                
         while True:
             YN_input = input('You win, one more(Y/N)?')
             if user_input =='0':
@@ -325,8 +327,7 @@ def main():
             else:
                 print("Wrong Input, Input again")
             
-        if user_input == '0':
-            break
+
 
         if YN_input == '0':
             break
